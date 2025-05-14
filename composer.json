@@ -1,0 +1,28 @@
+{
+  "name": "multiservicios-web/valida-curp",
+  "description": "Validate, calculate and obtain CURP information in México.",
+  "keywords": [
+    "valida",
+    "curp",
+    "México",
+    "client",
+    "api"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "MultiserviciosWeb\\ValidaCurp\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joel Rojas",
+      "email": "me@hckdrk.mx"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.3",
+    "guzzlehttp/guzzle": "^7.9",
+    "ext-json": "*"
+  }
+}

@@ -33,7 +33,7 @@ class Client
     private $customEndpoint;
     private $token;
 
-    const LIBRARY_VERSION = '1.0.0';
+    const LIBRARY_VERSION = '1.1.1';
     const TYPE = 'php_composer';
 
 

@@ -4,7 +4,7 @@
 [![GitHub Release Date](https://img.shields.io/github/release-date/hckdrkmx/validaCurp-client)]()
 
 
-* This library can validate, calculate and obtain CURP information in México.
+* This library can validate, calculate and gain CURP information in México.
 
 * Copyright (c) Multiservicios Web JCA S.A. de C.V., https://multiservicios-web.com.mx
 * More information: https://valida-curp.com.mx
@@ -16,7 +16,7 @@
 
 ## 2. Installation
 
-You can install this project via composer with the following commands:
+You can install this library via composer by following this command:
 
 ```bash
   composer require multiservicios-web/valida-curp
@@ -24,18 +24,18 @@ You can install this project via composer with the following commands:
 
 ## 3. Account
 
-### 3.1. Create account 
-Create an account following this link: https://valida-curp.tawk.help/article/registro-de-usuario
+### 3.1. Create an account 
+Create an account by following this link: https://valida-curp.tawk.help/article/registro-de-usuario
 
-### 3.2. Create project
-Create a project following this link: https://valida-curp.tawk.help/article/creaci%C3%B3n-de-proyecto
+### 3.2. Create a project
+Create a project by following this link: https://valida-curp.tawk.help/article/creaci%C3%B3n-de-proyecto
 
-### 3.3. Get token
-Get your token following this link: https://valida-curp.tawk.help/article/obtener-token-llave-privada-proyecto
+### 3.3. Get a token
+Get your token by following this link: https://valida-curp.tawk.help/article/obtener-token-llave-privada-proyecto
 
 ## **4. Usage**
 
-### 4.1. include autoload and import library  
+### 4.1. include "autoload" file and import the library  
 
 ```php
 <?php
@@ -45,8 +45,8 @@ use MultiserviciosWeb\ValidaCurp\Client as ValidaCurp;
 use MultiserviciosWeb\ValidaCurp\ValidaCurpException;
 ```
 
-### 4.2. create instance
-The constructor receives the first parameter the project token
+### 4.2. Create an instance
+The constructor receives as first parameter the token of the project.
 ```php
 $validaCurp = new ValidaCurp("YOUR-TOKEN");
 ```
@@ -59,8 +59,8 @@ $validaCurp->setVersion(1); //1 or 2
 
 ## 5. Methods
 
-### 5.1. Validate CURP
-isValid() method takes a CURP as a parameter. Validate the structure CURP.
+### 5.1. To validate CURP
+The method "isValid()" takes a CURP as a parameter. To validate the structure CURP.
 ```php
 $validaCurp->isValid('PXNE660720HMCXTN06');
 ```
@@ -72,8 +72,8 @@ stdClass Object
 )
 ```
 
-### 5.2. Get CURP data
-getData() method takes a CURP as a parameter. Consult the CURP information in RENAPO.
+### 5.2. To get CURP data
+The method "getData()" takes a CURP as a parameter. To consult the CURP information in RENAPO.
 ```php
 $validaCurp->getData('PXNE660720HMCXTN06');
 ```
@@ -118,9 +118,9 @@ stdClass Object
 )
 ```
 
-### 5.3. calculate CURP
-Calculates the structure of a CURP with provided data.
-calculate() receives an array with the following elements:
+### 5.3. To calculate a CURP
+The method "calculate()" takes an array as parameter. To calculate the structure of a CURP with provided data.
+Receives an array with the following elements:
 [names, lastName, secondLastName, birthDay, birthMonth, birthYear, gender, entity]
 ```php
 $validaCurp->calculate([
@@ -142,8 +142,8 @@ stdClass Object
 )
 ```
 
-### 5.4. Get entities
-getEntities() method get the list of entities.
+### 5.4. To get entities
+The method "getEntities()" doesn't take any parameters. To get the list of entities.
 ```php
 $validaCurp->getEntities();
 ```
@@ -176,6 +176,7 @@ https://github.com/hckdrkmx/validaCurp-client/blob/main/index.php
 
 - Copyright (c) **Multiservicios Web JCA S.A. de C.V.**, https://multiservicios-web.com.mx
 - **Author:** Joel Rojas <me@hckdrk.mx>
+- **Grammatical corrections:** Yesenia Armendáriz
 
 ## 8. License
 
